@@ -89,7 +89,7 @@ def self.find_by_name(name)
   def self.find_or_create_by(name:, breed:)
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ?")
     if !dog.empty?
-    dog_data = song[0]
+    dog_data = dog[0]
     dog = self.new(dog_data[0], dog_data[1], dog_data[2])
     else
     song = self.create(name: name, breed: breed)
