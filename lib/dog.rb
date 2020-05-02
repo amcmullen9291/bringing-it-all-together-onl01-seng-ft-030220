@@ -94,7 +94,6 @@ def self.find_by_name(name)
     else
     song = self.create(name: name, breed: breed)
     end
-  dog_data
 end
 
 end 
