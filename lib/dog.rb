@@ -64,4 +64,8 @@ def self.new_from_db(row)
     self.new(attributes)
   end
 
+def self.find_by_id 
+  
+end
+
 end 
