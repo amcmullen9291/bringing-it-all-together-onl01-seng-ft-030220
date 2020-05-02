@@ -86,7 +86,7 @@ def self.new_from_db(row)
 
 def self.find_by_name(name)
     sql = <<-SQL
-      SELECT * FROM students
+      SELECT * FROM dogs
       WHERE name = ?
       LIMIT 1
       SQL
