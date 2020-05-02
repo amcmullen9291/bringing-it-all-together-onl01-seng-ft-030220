@@ -92,7 +92,7 @@ def self.find_by_name(name)
     dog_data = song[0]
     dog = self.new(dog_data[0], dog_data[1], dog_data[2])
     else
-    song = self.create(name: name, breed: breed)
+    song = self.create(id: id, name: name, breed: breed)
     end
   song
 end
